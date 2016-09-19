@@ -73,12 +73,12 @@
            android:background="@drawable/tabmovie"/>
 
    </RadioGroup>
-    <android.support.v4.view.ViewPager
+    <com.example.tom.one.NoScrollViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/viewPage"
         android:layout_below="@id/rela_topna"
         android:layout_above="@id/navbar">
 
-    </android.support.v4.view.ViewPager>
+    </com.example.tom.one.NoScrollViewPager>
 </RelativeLayout>

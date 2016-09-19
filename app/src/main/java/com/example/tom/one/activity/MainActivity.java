@@ -1,17 +1,17 @@
 package com.example.tom.one.activity;
 
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.example.tom.one.NoScrollViewPager;
 import com.example.tom.one.R;
 import com.example.tom.one.adapter.ViewPageAdapter;
 
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
-    ViewPager viewPager;
+    NoScrollViewPager viewPager;
     RadioButton rb_home;
     RadioButton rb_read;
     RadioButton rb_music;
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     }
 
     public void bindView() {
-        viewPager = (ViewPager) findViewById(R.id.viewPage);
+        viewPager = (NoScrollViewPager) findViewById(R.id.viewPage);
         rb_home = (RadioButton) findViewById(R.id.rb_home);
         rb_read = (RadioButton) findViewById(R.id.rb_read);
         rb_music = (RadioButton) findViewById(R.id.rb_music);
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         viewPager.setCurrentItem(0);
 //        viewPager.setHorizontalScrollBarEnabled(false);
 //        viewPager.addOnPageChangeListener(this);
+        viewPager.setNoScroll(true);
     }
 
     @Override
