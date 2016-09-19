@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tom.one.fragment.ChildHomeFragment">
+
+    <ImageView
+        android:id="@+id/iv_child_home"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_child_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/iv_child_home"
+        android:text="aaa.aaaa"
+        android:textSize="10sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#64000000" />
+
+    <TextView
+        android:id="@+id/tv_child_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/iv_child_home"
+        android:text="aaaaaaaaaaaaaaa"
+        android:textSize="10sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#64000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_child_text"
+        android:layout_below="@+id/tv_child_author"
+        android:text="sssssssssssssssssssssssss"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_child_time"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="2016.8.15"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>
