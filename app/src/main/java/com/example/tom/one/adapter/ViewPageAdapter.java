@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 
 import com.example.tom.one.activity.MainActivity;
 import com.example.tom.one.fragment.HomeFragment;
-import com.example.tom.one.fragment.MovieFragment;
-import com.example.tom.one.fragment.MusicFragment;
 import com.example.tom.one.fragment.ReadFragment;
 
 /**

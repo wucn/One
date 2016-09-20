@@ -2,11 +2,10 @@ package com.example.tom.one.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.example.tom.one.NoScrollViewPager;
+import com.example.tom.one.rewrite.NoScrollViewPager;
 import com.example.tom.one.R;
 import com.example.tom.one.adapter.ViewPageAdapter;
 
@@ -27,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mAdapter = new ViewPageAdapter(getSupportFragmentManager());
         bindView();
 
@@ -73,7 +73,9 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
     }
 
-//    @Override
+
+
+    //    @Override
 //    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 ////        Log.e("===", "==onPageScrolled==" + position);
 //    }
